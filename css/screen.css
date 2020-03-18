@@ -252,7 +252,9 @@ a:focus {
 
 /* reverse horizontal row modifier */
 
-.o-layout--row-reverse {}
+.o-layout--row-reverse {
+    flex-direction: row-reverse;
+}
 
 /* Horizontal alignment modifiers*/
 
@@ -278,15 +280,21 @@ a:focus {
 
 /* Vertical item alignment modifiers */
 
-.o-layout--align-start {}
+.o-layout--align-start {
+    align-items: flex-start;
+}
 
-.o-layout--align-end {}
+.o-layout--align-end {
+    align-items: flex-end;
+}
 
-.o-layout--align-center {}
+.o-layout--align-center {
+    align-items: center;
+}
 
 .o-layout--align-baseline {}
 
-/* Vertical content alignment modifiers. Only work if there is one than one flex item */
+/* Vertical content alignment modifiers. Only work if there is more than one flex item */
 
 .o-layout--align-content-start {}
 
@@ -441,14 +449,20 @@ a:focus {
 
 @media (min-width: 768px) {
     .u-1-of-2-bp2 {}
+    .u-1-of-3-bp2 {}
+    .u-1-of-4-bp2
 }
 
 @media (min-width: 992px) {
     .u-1-of-2-bp3 {}
+    .u-1-of-3-bp3 {}
+    .u-1-of-4-bp3 {}
 }
 
 @media (min-width: 1200px) {
     .u-1-of-2-bp4 {}
+    .u-1-of-3-bp4 {}
+    .u-1-of-4-bp4 {}
 }
 
 
