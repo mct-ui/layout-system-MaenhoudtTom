@@ -167,6 +167,44 @@ a:focus {
     Object description
 */
 
+/*
+    Objects: Row
+    ---
+    Creates a horizontal row that stretches the viewport and adds padding around children
+*/
+
+.o-row {
+    padding: 24px 24px 0;
+    display: flow-root;
+}
+
+.o-row--primary {
+    background-color: #e85e00;
+    color: white;
+}
+
+.o-row--dark {
+    background-color: darkgrey;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .o-row--lg {
+        padding: 48px 48px 0;
+    }
+}
+
+/*
+    Objects: Container
+    ---
+    Creates a horizontal container that sets de global max-width
+*/
+
+.o-container {
+    max-width: 90em;
+    margin: auto;
+}
+
 /*------------------------------------*\
   #COMPONENTS
 \*------------------------------------*/
@@ -176,6 +214,26 @@ a:focus {
     ---
     Component description
 */
+
+/*
+    Component: layout block
+    ---
+    A small component to demonstrate the layout items
+*/
+
+.c-layout-block {
+    background-color: LightGrey;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.c-layout-block--ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 
 /*------------------------------------*\
   #UTILITIES
@@ -196,6 +254,103 @@ a:focus {
     ---
     Utility description
 */
+
+/*
+    Utilities: max-width
+    ---
+    Utility classes to put specific max widths onto elements
+*/
+
+.u-max-width-sm {
+    max-width: 36em !important;
+}
+
+.u-max-width-md {
+    max-width: 45em;
+}
+
+.u-max-width-lg {
+    max-width: 60em;
+}
+
+.u-max-width-xl {
+    max-width: 75em;
+}
+
+.u-max-width-none {
+    max-width: none;
+}
+
+/*
+    Utility: Flex
+    ---
+    Utility classes to put specific flex properties onto elements
+    Will be mostly used on o-layout__item
+*/
+
+.u-flex-basis-auto {
+    flex-basis: auto !important;
+}
+
+.u-flex-grow-1 {
+    flex-grow: 1 !important;
+}
+
+.u-1-of-2 {
+    flex-basis: calc(100% / 2) !important;
+}
+
+.u-1-of-3 {
+    flex-basis: calc(100% / 3) !important;
+}
+
+.u-2-of-3 {
+    flex-basis: calc(100% / 3 * 2) !important;
+}
+
+.u-1-of-4 {
+    flex-basis: calc(100% / 4) !important;
+}
+
+.u-3-of-4 {
+    flex-basis: calc(100% / 4 * 3);
+}
+
+.u-1-of-5 {
+    flex-basis: calc(100% / 5);
+}
+
+.u-2-of-5 {
+    flex-basis: calc(100% / 5 * 2);
+}
+
+.u-3-of-5 {
+    flex-basis: calc(100% / 5 * 3);
+}
+
+.u-4-of-5 {}
+
+.u-1-of-6 {}
+
+.u-5-of-6 {}
+
+@media (min-width: 576px) {
+    .u-1-of-2-bp1 {}
+}
+
+@media (min-width: 768px) {
+    .u-1-of-2-bp2 {}
+}
+
+@media (min-width: 992px) {
+    .u-1-of-2-bp3 {}
+}
+
+@media (min-width: 1200px) {
+    .u-1-of-2-bp4 {}
+}
+
+
 
 /*------------------------------------*\
   #MEDIA
